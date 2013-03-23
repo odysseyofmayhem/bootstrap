@@ -32,6 +32,8 @@ build:
 	@echo "/**\n* Bootstrap.js v3.0.0 by @fat & @mdo\n* Copyright 2012 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/" > docs/assets/js/copyright.js
 	@cat docs/assets/js/copyright.js docs/assets/js/bootstrap.min.tmp.js > docs/assets/js/bootstrap.min.js
 	@rm docs/assets/js/copyright.js docs/assets/js/bootstrap.min.tmp.js
+	@mkdir dist
+	@cp -Rf docs/assets dist/
 	@echo "       ${CHECK}"
 	@echo "${HR}"
 	@echo "\033[36mSuccess!\n\033[39m"
